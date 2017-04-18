@@ -38,7 +38,7 @@ struct OptionalId {
 class RLMAccessorContext {
 public:
     RLMAccessorContext(RLMObjectBase *parentObject);
-    RLMAccessorContext(RLMRealm *realm, RLMClassInfo& info, bool is_create);
+    RLMAccessorContext(RLMRealm *realm, RLMClassInfo& info, bool is_create=false);
 
     id defaultValue(NSString *key);
     id value(id obj, size_t propIndex);
